@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="900.0" stylesheets="@theme.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dota.view.MainMenuController">
+   <children>
+      <Pane prefHeight="600.0" prefWidth="900.0">
+         <children>
+            <ImageView fx:id="mainMenuBg" fitHeight="600.0" fitWidth="900.0" pickOnBounds="true" preserveRatio="false" />
+            <VBox prefHeight="600.0" prefWidth="900.0">
+               <children>
+                  <AnchorPane prefHeight="600.0" prefWidth="900.0">
+                     <children>
+                        <Pane layoutX="350.0" layoutY="200.0" prefHeight="200.0" prefWidth="200.0">
+                           <children>
+                              <ButtonBar layoutX="1.0" layoutY="147.0" prefHeight="40.0" prefWidth="200.0">
+                                <buttons>
+                                  <Button mnemonicParsing="false" onAction="#handlePlay" prefHeight="35.0" styleClass="play-button" text="Play ">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font></Button>
+                                    <Button alignment="CENTER" mnemonicParsing="false" onAction="#handleExit" prefHeight="35.0" styleClass="exit-button" text="Exit">
+                                       <font>
+                                          <Font name="Courier New" size="14.0" />
+                                       </font></Button>
+                                </buttons>
+                                 <padding>
+                                    <Insets right="22.0" />
+                                 </padding>
+                              </ButtonBar>
+                              <Label layoutX="-67.0" layoutY="67.0" styleClass="label-with-custom-font" text="Dota Arena">
+                                 <font>
+                                    <Font name="Baskerville Old Face" size="64.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Pane>
+                        <ImageView fx:id="mainMenuLogo" fitHeight="125.0" fitWidth="125.0" layoutX="389.0" layoutY="135.0" pickOnBounds="true" preserveRatio="true" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </VBox>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

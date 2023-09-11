@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dota.view.GuideController">
+   <children>
+      <TabPane prefHeight="600.0" prefWidth="900.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Overview">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0">
+                     <children>
+                        <ImageView fx:id="guideBg" fitHeight="600.0" fitWidth="900.0" pickOnBounds="true" />
+                        <Pane layoutX="-13.0" prefHeight="571.0" prefWidth="400.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="-13.0" AnchorPane.rightAnchor="512.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <Label layoutX="60.0" layoutY="221.0" prefHeight="35.0" prefWidth="272.0" text="Welcome to Dota Arena!">
+                                 <font>
+                                    <Font size="24.0" />
+                                 </font>
+                                 <effect>
+                                    <Lighting>
+                                       <bumpInput>
+                                          <Glow />
+                                       </bumpInput>
+                                       <light>
+                                          <Light.Distant color="#b0d15d" />
+                                       </light>
+                                    </Lighting>
+                                 </effect>
+                              </Label>
+                              <ImageView fx:id="guideLogo" fitHeight="125.0" fitWidth="125.0" layoutX="133.0" layoutY="72.0" pickOnBounds="true" preserveRatio="true" />
+                              <Text layoutX="67.0" layoutY="318.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Inspired by DOTA 2, Dota Arena is a turn-based strategy game where two players face off against each other, each choosing one hero from a pool of three unique heroes with&#10; unique skillsets. " textAlignment="CENTER" wrappingWidth="258.54222297668457">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </Pane>
+                        <Pane layoutX="373.0" layoutY="-8.0" prefHeight="571.0" prefWidth="500.0">
+                           <children>
+                              <Label layoutX="3.0" layoutY="50.0" text="How to Play:">
+                                 <font>
+                                    <Font size="30.0" />
+                                 </font>
+                              </Label>
+                              <Text layoutX="6.0" layoutY="149.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1. This is a 2 player game. &#10;&#10;2. When ready, click 'Play' to start the game.&#10;&#10;3. Player 1 will first enter their name and choose a character.&#10;&#10;4. Player 2 enters their name and chooses a character.&#10;&#10;5. After character selection, the battle begins.&#10;&#10;6. Players take turns to choose from several actions, namely attack, use skill, restore mana or forfeit.&#10;&#10;7. The game ends when either one of the player's health falls to 0. The player left standing is the winner." wrappingWidth="478.9867420196533">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </Pane>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Heroes">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fx:id="heroesBg" fitHeight="571.0" fitWidth="900.0" pickOnBounds="true" />
+                        <HBox layoutX="303.0" layoutY="169.0" prefHeight="571.0" prefWidth="900.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <Pane prefHeight="571.0" prefWidth="300.0">
+                                 <children>
+                                    <ImageView fx:id="strengthLogo" fitHeight="35.0" fitWidth="35.0" layoutX="76.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true" />
+                                    <Label layoutX="135.0" layoutY="23.0" text="Strength">
+                                       <font>
+                                          <Font size="24.0" />
+                                       </font>
+                                    </Label>
+                                    <ImageView fx:id="marsImg" fitHeight="144.0" fitWidth="149.0" layoutX="76.0" layoutY="58.0" pickOnBounds="true" preserveRatio="true" />
+                                    <Text layoutX="36.0" layoutY="265.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mars, a Strength hero, thrives in the battlefield thanks to his exceptional tankiness. However, he struggles with dealing high damage and evading attacks." textAlignment="JUSTIFY" wrappingWidth="227.43110847473145">
+                                       <font>
+                                          <Font size="13.0" />
+                                       </font>
+                                    </Text>
+                                    <Label layoutX="120.0" layoutY="203.0" prefHeight="35.0" prefWidth="61.0" text="Mars">
+                                       <font>
+                                          <Font size="24.0" />
+                                       </font>
+                                    </Label>
+                                    <GridPane layoutX="31.0" layoutY="347.0" prefHeight="158.0" prefWidth="238.0" style="-fx-border-radius: 10; -fx-border-color: #f03c04; -fx-border-width: 2; -fx-vgap: 1; -fx-hgap: 1; -fx-padding: 1;">
+                                      <columnConstraints>
+                                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="107.0" minWidth="10.0" prefWidth="70.55554962158203" />
+                                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="158.44445037841797" minWidth="10.0" prefWidth="158.44445037841797" />
+                                      </columnConstraints>
+                                      <rowConstraints>
+                                        <RowConstraints maxHeight="28.77777099609375" minHeight="10.0" prefHeight="23.4444580078125" vgrow="SOMETIMES" />
+                                        <RowConstraints maxHeight="52.66668701171875" minHeight="2.66668701171875" prefHeight="22.0" vgrow="SOMETIMES" />
+                                        <RowConstraints maxHeight="88.33331298828125" minHeight="0.0" prefHeight="32.33331298828125" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="97.33331298828125" minHeight="5.66668701171875" prefHeight="52.66668701171875" vgrow="SOMETIMES" />
+                                      </rowConstraints>
+                                       <children>
+                                          <Label text="Attribute">
+                                             <GridPane.margin>
+                                                <Insets left="10.0" />
+                                             </GridPane.margin>
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <Label text="Value" GridPane.columnIndex="1">
+                                             <padding>
+                                                <Insets left="60.0" />
+                                             </padding>
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <Label text="Perk:" GridPane.rowIndex="1">
+                                             <GridPane.margin>
+                                                <Insets left="10.0" />
+                                             </GridPane.margin>
+                                             <font>
+                                                <Font size="13.0" />
+                                             </font></Label>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="High Armor" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                             <GridPane.margin>
+                                                <Insets left="10.0" />
+                                             </GridPane.margin>
+                                             <font>
+                                                <Font size="13.0" />
+                                             </font></Text>
+                                          <Label text="Ability:" GridPane.rowIndex="3">
+                                             <GridPane.margin>
+                                                <Insets left="10.0" />
+                                             </GridPane.margin>
+                                             <font>
+                                                <Font size="13.0" />
+                                             </font></Label>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Bulwark: Block opponent's next attack&#10;Manacost: 20.0" wrappingWidth="146.22618103027344" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                                             <GridPane.margin>
+                                                <Insets left="10.0" />
+                                             </GridPane.margin>
+                                             <font>
+                                                <Font size="13.0" />
+                                             </font></Text>
+                                          <Label text="Weakness:" GridPane.rowIndex="2">
+                                             <GridPane.margin>
+                                                <Insets left="10.0" />
+                                             </GridPane.margin>
+                                             <font>
+                                                <Font size="13.0" />
+                                             </font>
+                                          </Label>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Moderate Damage, No Evasion" wrappingWidth="117.61846923828125" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                             <GridPane.margin>
+                                                <Insets left="10.0" />
+                                             </GridPane.margin>
+                                             <font>
+                                                <Font size="13.0" />
+                                             </font>
+                                          </Text>
+                                       </children>
+                                    </GridPane>
+                                 </children>
+                              </Pane>
+                              <Pane layoutX="10.0" layoutY="10.0" prefHeight="571.0" prefWidth="300.0">
+                                 <children>
+                                    <ImageView fx:id="agilityLogo" fitHeight="35.0" fitWidth="35.0" layoutX="76.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true" />
+                                    <Label layoutX="135.0" layoutY="23.0" text="Agility">
+                                       <font>
+                                          <Font size="24.0" />
+                                       </font>
+                                    </Label>
+                                    <ImageView fx:id="juggernautImg" fitHeight="144.0" fitWidth="149.0" layoutX="76.0" layoutY="58.0" pickOnBounds="true" preserveRatio="true" />
+                                    <Text layoutX="36.0" layoutY="265.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Juggernaut, an Agility hero, excels in combat with swift evasions and steady damage. As an all-rounder, he fearlessly faces any challenge that comes his way." textAlignment="JUSTIFY" wrappingWidth="227.43110847473145">
+                                       <font>
+                                          <Font size="13.0" />
+                                       </font>
+                                    </Text>
+                                    <Label layoutX="94.0" layoutY="202.0" prefHeight="35.0" prefWidth="130.0" text="Juggernaut">
+                                       <font>
+                                          <Font size="24.0" />
+                                       </font>
+                                    </Label>
+                                    <GridPane layoutX="31.0" layoutY="347.0" prefHeight="155.0" prefWidth="238.0" style="-fx-border-radius: 10; -fx-border-color: #28e434; -fx-border-width: 2; -fx-vgap: 1; -fx-hgap: 1; -fx-padding: 1;">
+                                       <columnConstraints>
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="107.0" minWidth="10.0" prefWidth="72.66665649414062" />
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="168.33334350585938" minWidth="10.0" prefWidth="160.33334350585938" />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints maxHeight="28.77777099609375" minHeight="10.0" prefHeight="23.4444580078125" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="52.66668701171875" minHeight="2.66668701171875" prefHeight="22.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="88.33331298828125" minHeight="0.0" prefHeight="32.33331298828125" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="97.33331298828125" minHeight="5.66668701171875" prefHeight="52.66668701171875" vgrow="SOMETIMES" />
+                                       </rowConstraints>
+                                       <children>
+                                          <Label text="Attribute">
+                                             <GridPane.margin>
+                                                <Insets left="10.0" />
+                                             </GridPane.margin>
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <Label text="Value" GridPane.columnIndex="1">
+                                             <padding>
+                                                <Insets left="60.0" />
+                                             </padding>
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <Label text="Perk:" GridPane.rowIndex="1">
+                                             <GridPane.margin>
+                                                <Insets left="10.0" />
+                                             </GridPane.margin>
+                                             <font>
+                                                <Font size="13.0" />
+                                             </font>
+                                          </Label>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Frequent Evasion" wrappingWidth="147.21075439453125" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                             <GridPane.margin>
+                                                <Insets left="10.0" />
+                                             </GridPane.margin>
+                                             <font>
+                                                <Font size="13.0" />
+                                             </font>
+                                          </Text>
+                                          <Label text="Ability:" GridPane.rowIndex="3">
+                                             <GridPane.margin>
+                                                <Insets left="10.0" />
+                                             </GridPane.margin>
+                                             <font>
+                                                <Font size="13.0" />
+                                             </font>
+                                          </Label>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Blade Dance: Deal Critical Damage&#10;Manacost: 25.0" wrappingWidth="146.22618103027344" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                                             <GridPane.margin>
+                                                <Insets left="10.0" />
+                                             </GridPane.margin>
+                                             <font>
+                                                <Font size="13.0" />
+                                             </font>
+                                          </Text>
+                                          <Label text="Weakness:" GridPane.rowIndex="2">
+                                             <GridPane.margin>
+                                                <Insets left="10.0" />
+                                             </GridPane.margin>
+                                             <font>
+                                                <Font size="13.0" />
+                                             </font>
+                                          </Label>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Moderate Damage, Moderate Armor" wrappingWidth="130.41864013671875" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                             <GridPane.margin>
+                                                <Insets left="10.0" />
+                                             </GridPane.margin>
+                                             <font>
+                                                <Font size="13.0" />
+                                             </font>
+                                          </Text>
+                                       </children>
+                                    </GridPane>
+                                 </children>
+                              </Pane>
+                              <Pane layoutX="310.0" layoutY="10.0" prefHeight="571.0" prefWidth="300.0">
+                                 <children>
+                                    <ImageView fx:id="intelligenceLogo" fitHeight="35.0" fitWidth="35.0" layoutX="76.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true" />
+                                    <Label layoutX="135.0" layoutY="23.0" text="Intelligence">
+                                       <font>
+                                          <Font size="24.0" />
+                                       </font>
+                                    </Label>
+                                    <ImageView fx:id="zeusImg" fitHeight="144.0" fitWidth="149.0" layoutX="76.0" layoutY="58.0" pickOnBounds="true" preserveRatio="true" />
+                                    <Text layoutX="36.0" layoutY="265.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Zeus, an Intelligent hero, unleashes divine thunder upon his foes, dealing devastating nuke damage. However, he remains vulnerable due to his low armor and lack of evasion." textAlignment="JUSTIFY" wrappingWidth="227.43110847473145">
+                                       <font>
+                                          <Font size="13.0" />
+                                       </font>
+                                    </Text>
+                                    <Label layoutX="120.0" layoutY="203.0" prefHeight="35.0" prefWidth="61.0" text="Zeus">
+                                       <font>
+                                          <Font size="24.0" />
+                                       </font>
+                                    </Label>
+                                    <GridPane layoutX="25.0" layoutY="350.0" prefHeight="153.0" prefWidth="247.0" style="-fx-border-radius: 10; -fx-border-color: #08dcec; -fx-border-width: 2; -fx-vgap: 1; -fx-hgap: 1; -fx-padding: 1;">
+                                       <columnConstraints>
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="107.0" minWidth="10.0" prefWidth="76.3333740234375" />
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="165.6666259765625" minWidth="10.0" prefWidth="165.6666259765625" />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints maxHeight="28.77777099609375" minHeight="10.0" prefHeight="23.4444580078125" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="52.66668701171875" minHeight="2.66668701171875" prefHeight="23.666656494140625" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="88.33331298828125" minHeight="0.0" prefHeight="24.333343505859375" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="126.66665649414062" minHeight="5.66668701171875" prefHeight="74.33334350585938" vgrow="SOMETIMES" />
+                                       </rowConstraints>
+                                       <children>
+                                          <Label text="Attribute">
+                                             <GridPane.margin>
+                                                <Insets left="10.0" />
+                                             </GridPane.margin>
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <Label text="Value" GridPane.columnIndex="1">
+                                             <padding>
+                                                <Insets left="60.0" />
+                                             </padding>
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <Label text="Perk:" GridPane.rowIndex="1">
+                                             <GridPane.margin>
+                                                <Insets left="10.0" />
+                                             </GridPane.margin>
+                                             <font>
+                                                <Font size="13.0" />
+                                             </font>
+                                          </Label>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="High Damage" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                             <GridPane.margin>
+                                                <Insets left="10.0" />
+                                             </GridPane.margin>
+                                             <font>
+                                                <Font size="13.0" />
+                                             </font>
+                                          </Text>
+                                          <Label text="Ability:" GridPane.rowIndex="3">
+                                             <GridPane.margin>
+                                                <Insets left="10.0" />
+                                             </GridPane.margin>
+                                             <font>
+                                                <Font size="13.0" />
+                                             </font>
+                                          </Label>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Thundergod's Wrath: Deal Heavy Magical Damage&#10;Manacost: 30.0" wrappingWidth="158.8928680419922" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                                             <GridPane.margin>
+                                                <Insets left="10.0" />
+                                             </GridPane.margin>
+                                             <font>
+                                                <Font size="13.0" />
+                                             </font>
+                                          </Text>
+                                          <Label text="Weakness:" GridPane.rowIndex="2">
+                                             <GridPane.margin>
+                                                <Insets left="10.0" />
+                                             </GridPane.margin>
+                                             <font>
+                                                <Font size="13.0" />
+                                             </font>
+                                          </Label>
+                                          <Label prefHeight="19.0" prefWidth="154.0" text="Low Armor, No Evasion" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                             <GridPane.margin>
+                                                <Insets left="10.0" />
+                                             </GridPane.margin>
+                                             <font>
+                                                <Font size="13.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </GridPane>
+                                 </children>
+                              </Pane>
+                           </children>
+                        </HBox>
+                        <Label layoutX="30.0" layoutY="515.0" prefWidth="844.0" style="-fx-background-color: rgba(255,255,255, 0.7); -fx-background-radius: 10; -fx-label-padding: 5;" text="Tip: All heroes can lifesteal when dealing damage (Mars: 20%, Juggernaut: 25%, Zeus: 30%), regaining 35% of dealt damage as health. Keep this in mind; even in dire straits, lifesteal might just rescue your game." textAlignment="JUSTIFY" wrapText="true" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

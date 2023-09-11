@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.SepiaTone?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" stylesheets="@theme.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dota.view.GameController">
+   <children>
+      <Pane prefHeight="600.0" prefWidth="900.0">
+         <children>
+            <ImageView fx:id="gameBg" fitHeight="600.0" fitWidth="900.0" pickOnBounds="true" />
+         </children>
+      </Pane>
+      <FlowPane layoutX="609.0" layoutY="200.0" prefHeight="600.0" prefWidth="900.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox prefHeight="600.0" prefWidth="900.0">
+               <children>
+                  <Pane prefHeight="600.0" prefWidth="450.0">
+                     <children>
+                        <AnchorPane layoutX="-10.0" layoutY="10.0" prefHeight="600.0" prefWidth="437.0">
+                           <children>
+                              <Text fx:id="player1Name" layoutX="138.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Player 1: Juggernaut" textAlignment="CENTER" wrappingWidth="168.8533172607422">
+                                 <font>
+                                    <Font size="17.0" />
+                                 </font>
+                              </Text>
+                              <ToolBar layoutX="36.0" layoutY="69.0" prefHeight="37.0" prefWidth="391.0" style="-fx-background-radius: 20;">
+                                 <items>
+                                    <Label prefHeight="27.0" prefWidth="80.0" style="-fx-alignment: center;" text="HP" textAlignment="CENTER">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                       <opaqueInsets>
+                                          <Insets />
+                                       </opaqueInsets>
+                                    </Label>
+                                    <ProgressBar fx:id="player1HP" prefHeight="20.0" prefWidth="185.0" progress="0.78" />
+                                    <Label fx:id="player1HPText" prefHeight="26.0" prefWidth="103.0" text="100.00/100.00">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                       <effect>
+                                          <SepiaTone />
+                                       </effect>
+                                    </Label>
+                                 </items>
+                                 <effect>
+                                    <DropShadow color="#fae09d" height="30.8" radius="14.7" spread="0.2" width="30.0">
+                                       <input>
+                                          <SepiaTone level="0.2" />
+                                       </input></DropShadow>
+                                 </effect>
+                              </ToolBar>
+                              <ToolBar layoutX="36.0" layoutY="112.0" prefHeight="37.0" prefWidth="391.0" style="-fx-background-radius: 20;">
+                                 <items>
+                                    <Label prefHeight="27.0" prefWidth="80.0" style="-fx-alignment: center;" text="Mana" textAlignment="CENTER">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                       <opaqueInsets>
+                                          <Insets />
+                                       </opaqueInsets>
+                                    </Label>
+                                    <ProgressBar fx:id="player1Mana" prefHeight="20.0" prefWidth="185.0" progress="0.78" />
+                                    <Label fx:id="player1ManaText" prefHeight="26.0" prefWidth="98.0" text="50.00/80.00">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                       <effect>
+                                          <SepiaTone>
+                                             <input>
+                                                <DropShadow color="#f9d77e" />
+                                             </input>
+                                          </SepiaTone>
+                                       </effect>
+                                    </Label>
+                                 </items>
+                                 <effect>
+                                    <DropShadow color="#fae09d" height="31.6" radius="14.9" spread="0.2" width="30.0">
+                                       <input>
+                                          <SepiaTone level="0.2" />
+                                       </input></DropShadow>
+                                 </effect>
+                              </ToolBar>
+                              <ImageView fx:id="player1HeroImg" fitHeight="217.0" fitWidth="200.0" layoutX="125.0" layoutY="180.0" pickOnBounds="true" preserveRatio="true" />
+                              <GridPane fx:id="player1GridPane" focusTraversable="true" layoutX="38.0" layoutY="418.0" prefHeight="69.0" prefWidth="381.0">
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="111.33334350585938" minWidth="10.0" prefWidth="108.66665649414062" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="136.33331298828125" minWidth="10.0" prefWidth="121.33334350585938" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="115.11111450195312" minWidth="10.0" prefWidth="75.33331298828125" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="122.22225952148438" minWidth="10.0" prefWidth="74.6666259765625" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <Button fx:id="player1AttackButton" focusTraversable="false" mnemonicParsing="false" onAction="#handleP1Attack" onMouseEntered="#handleP1AttackEnter" onMouseExited="#handleP1AttackExit" prefHeight="53.0" prefWidth="106.0" text="Thunderbolt" textAlignment="CENTER" wrapText="true">
+                                       <GridPane.margin>
+                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                       </GridPane.margin>
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Button>
+                                    <Button fx:id="player1AbilityButton" focusTraversable="false" mnemonicParsing="false" onAction="#handleP1Ability" onMouseEntered="#handleP1AbilityEnter" onMouseExited="#handleP1AbilityExit" prefHeight="53.0" prefWidth="130.0" text="ThundergodsWrath" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="1">
+                                       <GridPane.margin>
+                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                       </GridPane.margin>
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Button>
+                                    <Button mnemonicParsing="false" onAction="#handleP1Forfeit" prefHeight="53.0" prefWidth="70.0" style="-fx-background-color: #ff726f;" text="Forfeit" GridPane.columnIndex="3">
+                                       <GridPane.margin>
+                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                       </GridPane.margin>
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Button>
+                                    <Button fx:id="player1ManaButton" mnemonicParsing="false" onAction="#handleP1Mana" prefHeight="53.0" prefWidth="70.0" style="-fx-background-color: #68c2f5;" text="Mana" wrapText="true" GridPane.columnIndex="2">
+                                       <GridPane.margin>
+                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                       </GridPane.margin>
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Button>
+                                 </children>
+                              </GridPane>
+                              <Pane fx:id="player1ManaLowPane" layoutX="139.0" layoutY="390.0" prefHeight="30.0" prefWidth="144.0" style="-fx-background-color: rgba(255, 255, 255, 0.5); -fx-background-radius: 50;" />
+                              <Text fx:id="player1ManaLow" layoutX="125.0" layoutY="410.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Not Enough Mana!" textAlignment="CENTER" wrappingWidth="168.8533172607422">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Text>
+                              <ImageView fx:id="player1AttackIcon" fitHeight="40.0" fitWidth="40.0" layoutX="72.0" layoutY="377.0" pickOnBounds="true" preserveRatio="true" />
+                              <ImageView fx:id="player1AbilityIcon" fitHeight="40.0" fitWidth="40.0" layoutX="185.0" layoutY="377.0" pickOnBounds="true" preserveRatio="true" />
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </Pane>
+                  <Pane prefHeight="600.0" prefWidth="450.0">
+                     <children>
+                        <AnchorPane layoutX="-4.0" layoutY="10.0" prefHeight="600.0" prefWidth="450.0">
+                           <children>
+                              <ToolBar layoutX="36.0" layoutY="69.0" prefHeight="37.0" prefWidth="391.0" style="-fx-background-radius: 20;">
+                                 <items>
+                                    <Label prefHeight="27.0" prefWidth="80.0" style="-fx-alignment: center;" text="HP" textAlignment="CENTER">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                       <opaqueInsets>
+                                          <Insets />
+                                       </opaqueInsets>
+                                    </Label>
+                                    <ProgressBar fx:id="player2HP" prefHeight="20.0" prefWidth="185.0" progress="0.78" />
+                                    <Label fx:id="player2HPText" prefHeight="26.0" prefWidth="100.0" text="70.00/100.00">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                       <effect>
+                                          <SepiaTone />
+                                       </effect>
+                                    </Label>
+                                 </items>
+                                 <effect>
+                                    <DropShadow color="#fae09d" height="36.37" radius="16.0925" spread="0.2" width="30.0">
+                                       <input>
+                                          <SepiaTone level="0.2" />
+                                       </input></DropShadow>
+                                 </effect>
+                              </ToolBar>
+                              <Text fx:id="player2Name" fill="WHITE" layoutX="148.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Player 2: Juggernaut" textAlignment="CENTER" wrappingWidth="174.18663024902344">
+                                 <font>
+                                    <Font size="17.0" />
+                                 </font>
+                              </Text>
+                              <ToolBar layoutX="36.0" layoutY="112.0" prefHeight="37.0" prefWidth="391.0" style="-fx-background-radius: 20;">
+                                 <items>
+                                    <Label prefHeight="27.0" prefWidth="80.0" style="-fx-alignment: center;" text="Mana" textAlignment="CENTER">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                       <opaqueInsets>
+                                          <Insets />
+                                       </opaqueInsets>
+                                    </Label>
+                                    <ProgressBar fx:id="player2Mana" prefHeight="20.0" prefWidth="185.0" progress="0.78" />
+                                    <Label fx:id="player2ManaText" prefHeight="26.0" prefWidth="89.0" text="50.00/80.00">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                       <effect>
+                                          <SepiaTone>
+                                             <input>
+                                                <DropShadow color="#f9d77e" />
+                                             </input>
+                                          </SepiaTone>
+                                       </effect>
+                                    </Label>
+                                 </items>
+                                 <effect>
+                                    <DropShadow color="#fae09d" height="36.37" radius="16.0925" spread="0.2" width="30.0">
+                                       <input>
+                                          <SepiaTone level="0.2" />
+                                       </input></DropShadow>
+                                 </effect>
+                              </ToolBar>
+                              <ImageView fx:id="player2HeroImg" fitHeight="217.0" fitWidth="200.0" layoutX="137.0" layoutY="180.0" pickOnBounds="true" preserveRatio="true" />
+                              <GridPane fx:id="player2GridPane" disable="true" layoutX="37.0" layoutY="416.0" prefHeight="69.0" prefWidth="381.0">
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="111.33331298828125" minWidth="10.0" prefWidth="107.33331298828125" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="128.33331298828125" minWidth="10.0" prefWidth="116.66668701171875" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="115.11111450195312" minWidth="10.0" prefWidth="78.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="122.22225952148438" minWidth="10.0" prefWidth="78.66668701171875" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <Button mnemonicParsing="false" onAction="#handleP2Forfeit" prefHeight="53.0" prefWidth="70.0" style="-fx-background-color: #ff726f;" text="Forfeit" GridPane.columnIndex="3">
+                                       <GridPane.margin>
+                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                       </GridPane.margin>
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Button>
+                                    <Button fx:id="player2AttackButton" focusTraversable="false" mnemonicParsing="false" onAction="#handleP2Attack" onMouseEntered="#handleP2AttackEnter" onMouseExited="#handleP2AttackExit" prefHeight="53.0" prefWidth="104.0" text="Thunderbolt" textAlignment="CENTER" wrapText="true">
+                                       <GridPane.margin>
+                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                       </GridPane.margin>
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Button>
+                                    <Button fx:id="player2AbilityButton" focusTraversable="false" mnemonicParsing="false" onAction="#handleP2Ability" onMouseEntered="#handleP2AbilityEnter" onMouseExited="#handleP2AbilityExit" prefHeight="53.0" prefWidth="130.0" text="ThundergodsWrath" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="1">
+                                       <GridPane.margin>
+                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                       </GridPane.margin>
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Button>
+                                    <Button fx:id="player2ManaButton" mnemonicParsing="false" onAction="#handleP2Mana" prefHeight="53.0" prefWidth="70.0" style="-fx-background-color: #68c2f5;" text="Mana" wrapText="true" GridPane.columnIndex="2">
+                                       <GridPane.margin>
+                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                       </GridPane.margin>
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Button>
+                                 </children>
+                              </GridPane>
+                              <Pane fx:id="player2ManaLowPane" layoutX="130.0" layoutY="390.0" prefHeight="30.0" prefWidth="144.0" style="-fx-background-color: rgba(0, 0, 0, 0.5); -fx-background-radius: 50;" />
+                              <Text fx:id="player2ManaLow" fill="WHITE" layoutX="117.0" layoutY="410.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Not Enough Mana!" textAlignment="CENTER" wrappingWidth="168.8533172607422">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Text>
+                              <ImageView fx:id="player2AttackIcon" fitHeight="40.0" fitWidth="40.0" layoutX="69.0" layoutY="377.0" pickOnBounds="true" preserveRatio="true" />
+                              <ImageView fx:id="player2AbilityIcon" fitHeight="40.0" fitWidth="40.0" layoutX="177.0" layoutY="377.0" pickOnBounds="true" preserveRatio="true" />
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </Pane>
+               </children>
+            </HBox>
+         </children>
+      </FlowPane>
+      <Text fx:id="gameStatusText" fill="WHITE" layoutX="325.0" layoutY="190.0" lineSpacing="0.2" strokeType="OUTSIDE" strokeWidth="0.0" text="Status" textAlignment="CENTER" wrappingWidth="240.0">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <Button fx:id="backButton" layoutX="365.0" layoutY="350.0" mnemonicParsing="false" onAction="#handleBack" text="Return to Main Menu">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="rematchButton" layoutX="410.0" layoutY="305.0" mnemonicParsing="false" onAction="#handleRematch" text="Rematch">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="600.0" prefWidth="900.0" stylesheets="@theme.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dota.view.P1HeroSelectionController">
+   <children>
+      <ImageView fx:id="P1Bg" fitHeight="600.0" fitWidth="900.0" pickOnBounds="true" preserveRatio="false" />
+      <Pane layoutX="-7.0" layoutY="-2.0" prefHeight="611.0" prefWidth="900.0" AnchorPane.bottomAnchor="-9.0" AnchorPane.leftAnchor="-7.0" AnchorPane.rightAnchor="7.0" AnchorPane.topAnchor="-2.0">
+         <children>
+            <Label layoutX="198.0" layoutY="30.0" text="Enter Player 1' s Name:">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="P1NameField" layoutX="423.0" layoutY="25.0" prefHeight="45.0" prefWidth="312.0" promptText="Player 1's Name">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </TextField>
+            <Text fx:id="P1Hero" layoutX="302.0" layoutY="115.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Select Player 1' s Hero" textAlignment="CENTER" wrappingWidth="295.80560429021716">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Text>
+            <HBox layoutX="15.0" layoutY="143.0" prefHeight="333.0" prefWidth="900.0">
+               <children>
+                  <Pane prefHeight="200.0" prefWidth="283.0">
+                     <children>
+                        <ImageView fx:id="strengthLogo" fitHeight="35.0" fitWidth="35.0" layoutX="79.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fx:id="marsImg" fitHeight="245.0" fitWidth="182.0" layoutX="55.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true" />
+                        <Button fx:id="Mars" layoutX="91.0" layoutY="260.0" mnemonicParsing="false" onAction="#handleMars" prefHeight="30.0" prefWidth="120.0" text="Mars" textAlignment="CENTER">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Button>
+                        <Pane layoutX="135.0" layoutY="15.0" prefHeight="30.0" prefWidth="75.0" style="-fx-background-color: rgba(255, 255, 255, 0.5); -fx-background-radius: 50;" />
+                        <Label layoutX="139.0" layoutY="16.0" text="Strength">
+                           <font>
+                              <Font name="System Bold" size="17.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="283.0">
+                     <children>
+                        <ImageView fx:id="agilityLogo" fitHeight="35.0" fitWidth="35.0" layoutX="72.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true" />
+                        <Label layoutX="125.0" layoutY="10.0" text="Agility">
+                           <font>
+                              <Font name="System Bold" size="17.0" />
+                           </font>
+                        </Label>
+                        <ImageView fx:id="juggernautImg" fitHeight="245.0" fitWidth="182.0" layoutX="45.0" layoutY="57.0" pickOnBounds="true" preserveRatio="true" />
+                        <Button fx:id="Juggernaut" layoutX="76.0" layoutY="260.0" mnemonicParsing="false" onAction="#handleJuggernaut" prefHeight="30.0" prefWidth="120.0" text="Juggernaut" textAlignment="CENTER">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="293.0" layoutY="10.0" prefHeight="200.0" prefWidth="283.0">
+                     <children>
+                        <ImageView fx:id="intelligenceLogo" fitHeight="35.0" fitWidth="35.0" layoutX="72.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true" />
+                        <Label layoutX="125.0" layoutY="10.0" text="Intelligence">
+                           <font>
+                              <Font name="System Bold" size="17.0" />
+                           </font>
+                        </Label>
+                        <ImageView fx:id="zeusImg" fitHeight="245.0" fitWidth="182.0" layoutX="45.0" layoutY="57.0" pickOnBounds="true" preserveRatio="true" />
+                        <Button fx:id="Zeus" layoutX="75.0" layoutY="260.0" mnemonicParsing="false" onAction="#handleZeus" prefHeight="20.0" prefWidth="120.0" text="Zeus" textAlignment="CENTER">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </Pane>
+               </children>
+            </HBox>
+            <ButtonBar layoutX="645.0" layoutY="478.0" prefWidth="212.0">
+               <buttons>
+                  <Button fx:id="Next" focusTraversable="false" mnemonicParsing="false" onAction="#handleNext" styleClass="play-button" text="Next">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="Cancel" mnemonicParsing="false" onAction="#handleCancel" prefHeight="20.0" prefWidth="130.0" styleClass="exit-button" text="Cancel">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+               </buttons>
+            </ButtonBar>
+         </children></Pane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dota.view.RootLayoutController">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="Menu">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#handleBack" text="Return to Main Menu" />
+                  <MenuItem mnemonicParsing="false" onAction="#handleExit" text="Exit Game" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Guide">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#handleGuide" text="Overview &amp; Heroes" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="History">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#handleHistory" text="Match History" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+</BorderPane>
