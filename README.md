@@ -1,5 +1,6 @@
 # Dota-Arena
-Turn-based style 2 player game with a Dota theme 
+Turn-based style 2 player game with a Dota theme. 
+The game can be runned by downloading the [executble file](DotaArena.exe). Currently the match history in the executable file is not functioning.
 
 > Game Interface
 
